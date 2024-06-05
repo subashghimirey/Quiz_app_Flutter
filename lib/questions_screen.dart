@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:second_app/answer_button.dart';
 import 'package:second_app/data/questions.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class QuestionsScreen extends StatefulWidget {
-  const QuestionsScreen({super.key});
+  const QuestionsScreen({super.key, required this.onSelectAnswer});
+
+  final void Function(String answer) onSelectAnswer;
 
   @override
   State<QuestionsScreen> createState() {
@@ -15,18 +18,16 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   var currentQuestionIndex = 0;
   var correctAnswer = 0;
 
-  void nextQuestion() {
+  void nextQuestion(String selectedAnswer) {
+    widget.onSelectAnswer(selectedAnswer);
     setState(() {
       currentQuestionIndex += 1;
-      
     });
   }
 
   @override
   Widget build(context) {
-
-  var currentQuestion = questions[currentQuestionIndex];
-    
+    var currentQuestion = questions[currentQuestionIndex];
 
     // we had created list of questions using QuizQuestion objects
 
@@ -43,8 +44,11 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           children: [
             Text(
               currentQuestion.text,
-              style: const TextStyle(
-                  fontSize: 25, color: Color.fromARGB(255, 0, 0, 0), fontWeight: FontWeight.w500, fontFamily: AutofillHints.addressState), 
+              style: GoogleFonts.poppins(
+                color: const Color.fromARGB(255, 243, 244, 244),
+                fontWeight: FontWeight.w500,
+                fontSize: 22,
+              ),
               textAlign: TextAlign.center,
             ),
             const SizedBox(
@@ -58,7 +62,9 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             ...currentQuestion.shuffledAnswers().map((answer) {
               return AnswerButton(
                 answerText: answer,
-                onClick: nextQuestion,
+                onClick: () {
+                  nextQuestion(answer);
+                },
               );
             }),
           ],
