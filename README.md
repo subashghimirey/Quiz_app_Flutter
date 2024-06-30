@@ -1,6 +1,6 @@
 # Quiz App
 
-Welcome to the Quiz App repository! 🎉 This project was completed as part of the #60DaysOfLearning challenge, where I focused on mastering Flutter for mobile app development. 🚀
+Welcome to the Quiz App repository! 
 
 ## 📚 Overview
 
@@ -14,8 +14,10 @@ The Quiz App is a dynamic and interactive mobile application designed to test us
 
 ## 📸 Screenshots
 
-![Quiz App Screenshot](https://via.placeholder.com/600x400.png?text=Quiz+App+Screenshot)  
-*Example screenshot of the Quiz App*
+![Quiz App Screenshot](![Screenshot_1719766931](https://github.com/subashghimirey/Quiz_app_Flutter/assets/88834868/f141a370-3f7a-4dce-89e7-f2b4e22fd8d6)
+)  
+
+
 
 ## 🛠️ Technologies Used
 
@@ -75,15 +77,6 @@ To run the Quiz App locally, follow these steps:
 ## 🤝 Contributing
 
 Feel free to open issues or submit pull requests if you have suggestions or improvements for the app!
-
-## 🔗 Links
-
-- **GitHub Repository:** [https://github.com/yourusername/quiz-app](https://github.com/yourusername/quiz-app)
-- **Demo:** [Link to demo or app store](#)
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## ✨ Acknowledgments
 
