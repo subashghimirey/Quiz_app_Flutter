@@ -14,10 +14,9 @@ The Quiz App is a dynamic and interactive mobile application designed to test us
 
 ## 📸 Screenshots
 
-![Quiz App Screenshot](![Screenshot_1719766931](https://github.com/subashghimirey/Quiz_app_Flutter/assets/88834868/f141a370-3f7a-4dce-89e7-f2b4e22fd8d6)
-)  
-
-
+(![Screenshot_1719766931](https://github.com/subashghimirey/Quiz_app_Flutter/assets/88834868/f141a370-3f7a-4dce-89e7-f2b4e22fd8d6)
+![Screenshot_1719766936](https://github.com/subashghimirey/Quiz_app_Flutter/assets/88834868/8eacac15-849a-460f-8849-96f3987c3516)
+![Screenshot_1719766942](https://github.com/subashghimirey/Quiz_app_Flutter/assets/88834868/434377b5-152a-46e8-9e61-b9d5c02680e8)
 
 ## 🛠️ Technologies Used
 
